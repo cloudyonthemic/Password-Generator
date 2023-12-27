@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <p>Generate a random password</p>
+        <form class="form" id="passwordForm">
+            <div class="input-group">
+                <label for="length">Length</label>
+                <input type="number" name="length" id="length" min="6" max="128" value="8">
+            </div>
+            <div class="input-group">
+                <label for="lowercase">Lowercase</label>
+                <input type="checkbox" name="lowercase" id="lowercase" checked>
+            </div>
+            <div class="input-group">
+                <label for="uppercase">Uppercase</label>
+                <input type="checkbox" name="uppercase" id="uppercase" checked>
+            </div>
+            <div class="input-group">
+                <label for="numbers">Numbers</label>
+                <input type="checkbox" name="numbers" id="numbers" checked>
+            </div>
+            <div class="input-group">
+                <label for="symbols">Symbols</label>
+                <input type="checkbox" name="symbols" id="symbols" checked>
+            </div>
+            <button type="submit" id="generateBtn" class="generateBtn">Generate Password</button>
+            <div class="password-output">
+                <label for="generatedPassword">Generated Password:</label>
+                <textarea id="generatedPassword" rows="3" readonly></textarea>
+            </div>
+            <div class="copy-btn">
+                <button type="button" class="copyBtn" id="copyBtn" onclick="copyPassword()">Copy to Clipboard</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer with my name and copyrights -->
+    <footer class="footer">
+        <p>Ibrahim Haseeb 2023 </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
