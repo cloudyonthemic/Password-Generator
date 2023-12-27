@@ -16,7 +16,7 @@ A simple web-based tool to generate random passwords based on user-defined crite
 
 ## 🌐 Live Demo
 
-[Try it out here!](#) <!-- Add the live demo link here -->
+[Try it out here!](#https://cloudyonthemic.github.io/Password-Generator/) <!-- Add the live demo link here -->
 
 ## 📷 Screenshots
 
